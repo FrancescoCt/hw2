@@ -76,7 +76,7 @@ function aggiungi(event){
 			let source = (immagine.src).split("/");
 			//console.log(source[source.length-1]);
 
-			fetch("http://localhost/laravel/public/img/" +source[source.length-1]).then(onInvio).then(onConferma);
+			fetch("http://localhost/Sogno%20Italiano/public/img/" +source[source.length-1]).then(onInvio).then(onConferma);
 			//Fine parte nuova
 			break;
 			
