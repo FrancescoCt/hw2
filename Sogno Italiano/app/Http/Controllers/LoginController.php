@@ -20,10 +20,6 @@ class LoginController extends BaseController
 	
 	public function checkLogin(){
 		
-	
-		//$result = DB::select('SELECT * FROM cliente where cf = ? AND userPswd = ?', [request('cf_utente'), request('pswd_utente')]);
-		//$result = DB::table('cliente')->where('cf', request('cf_utente'))->where('userPswd', request('pswd_utente'))->get(); //Al posto di get() posso usare first() per farmi restituire anzichè la collection solo un elemento della collection
-	
 		$user = Cliente::where("cf", request('cf_utente'))->where("userPswd", md5(request('pswd_utente')))->first();	//Da sistemare perchè si richiama alla tabella "clientes" che non esiste e non "cliente"
 		if(isset($user)){
 			

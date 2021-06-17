@@ -33,7 +33,7 @@ class GalleriaController extends BaseController
 		for($i=0; $i<count($result);$i++){
 			
 			$source= explode("/",$result[$i]->Immagine);
-			$immagine = "http://localhost/laravel/public/immagini/Database/".$source[count($source)-1];
+			$immagine = "http://localhost/Sogno%20Italiano/public/immagini/Database/".$source[count($source)-1];
 			
 			$newJson[] = array(
 								'Posizione' =>$i+1, 

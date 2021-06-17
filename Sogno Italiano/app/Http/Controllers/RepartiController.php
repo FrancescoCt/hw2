@@ -25,7 +25,7 @@ class RepartiController extends BaseController
 		for($i=0; $i<count($result);$i++){
 			//Sistemo l'indirizzo dell'immagine
 			$source= explode("/",$result[$i]->Immagine);
-			$immagine = "http://localhost/laravel/public/immagini/".$source[count($source)-1];
+			$immagine = "http://localhost/Sogno%20Italiano/public/immagini/".$source[count($source)-1];
 			
 			$newJson[] = array(
 					'Citta' => $result[$i]->Citta,

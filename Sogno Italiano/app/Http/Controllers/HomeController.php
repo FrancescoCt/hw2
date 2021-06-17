@@ -97,7 +97,7 @@ class HomeController extends BaseController
 	
 	public function addPreferiti($query){
 		$nomeImg  = "".$query;
-	$img = "http://localhost/laravel/public/immagini/".$query;
+	$img = "http://localhost/Sogno%20Italiano/public/immagini/".$query;
 
 	if(substr($nomeImg, 0, 7) == 'reparto' || substr($nomeImg, 0, 6) == 'grucce'){
 		$codice =DB::select(
@@ -122,7 +122,7 @@ class HomeController extends BaseController
 	
 	public function removePreferiti($query){
 		$nomeImg  = "".$query;
-		$img = "http://localhost/laravel/public/immagini/".$query;
+		$img = "http://localhost/Sogno%20Italiano/public/immagini/".$query;
 		
 		if(substr($nomeImg, 0, 7) == 'reparto' || substr($nomeImg, 0, 6) == 'grucce'){
 			$codice =DB::select(
@@ -156,7 +156,7 @@ class HomeController extends BaseController
 		$newJson = array();
 		for($i=0; $i<count($fornitori);$i++){
 			$source= explode("/",$fornitori[$i]['immagine'] );
-			$immagine = "http://localhost/laravel/public/immagini/Database/".$source[count($source)-1];
+			$immagine = "http://localhost/Sogno%20Italiano/public/immagini/Database/".$source[count($source)-1];
 			
 			$newJson[] = array(
 					'codice' => $fornitori[$i]['codice'],
