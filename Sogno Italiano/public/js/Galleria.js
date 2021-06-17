@@ -67,7 +67,7 @@ function aggiungi(event){
 			
 			let stringa = '';
 			
-			if(event.currentTarget.parentNode.childNodes[4].childNodes[6] != undefined){//Script home js calibrato per i reparti
+			if(event.currentTarget.parentNode.childNodes[4].childNodes[6] != undefined){
 				for(let i = 2; i<6;i++){
 					stringa = stringa+ " "+event.currentTarget.parentNode.childNodes[4].childNodes[i].textContent;
 				}

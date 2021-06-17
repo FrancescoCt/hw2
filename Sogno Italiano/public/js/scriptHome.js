@@ -77,7 +77,7 @@ function aggiungi(event){
 			let source = (immagine.src).split("/");
 		//	console.log(source[source.length-1]);
 
-			fetch("http://localhost/laravel/public/img/" +source[source.length-1]).then(onInvio).then(onConferma);
+			fetch("http://localhost/Sogno%20Italiano/public/img/" +source[source.length-1]).then(onInvio).then(onConferma);
 			//Fine parte nuova
 			break;
 			} 
@@ -123,7 +123,7 @@ function rimozione(event){
 			let source = (imgSrc).split("/");
 	//		console.log(source[source.length-1]);
 
-			fetch("http://localhost/laravel/public/img/rimuovi/" +source[source.length-1]).then(onInvio).then(onConferma);
+			fetch("http://localhost/Sogno%20Italiano/public/img/rimuovi/" +source[source.length-1]).then(onInvio).then(onConferma);
 		}
 		else {
 			elemento.remove();
@@ -131,7 +131,7 @@ function rimozione(event){
 			let source = (imgSrc).split("/");
 	//		console.log(source[source.length-1]);
 
-			fetch("http://localhost/laravel/public/img/rimuovi/" +source[source.length-1]).then(onInvio).then(onConferma);
+			fetch("http://localhost/Sogno%20Italiano/public/img/rimuovi/" +source[source.length-1]).then(onInvio).then(onConferma);
 		}
 	}
 	

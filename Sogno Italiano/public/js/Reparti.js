@@ -130,14 +130,14 @@ function rimozione(event){
 			let source = (imgSrc).split("/");
 			//console.log(source[source.length-1]);
 
-			fetch("http://localhost/laravel/public/img/rimuovi/" +source[source.length-1]).then(onRimuovi).then(onConferma1);
+			fetch("http://localhost/Sogno%20Italiano/public/img/rimuovi/" +source[source.length-1]).then(onRimuovi).then(onConferma1);
 		}else {
 			//console.log("entrato nell'else");
 			elemento.remove();
 			let source = (imgSrc).split("/");
 			//console.log(source[source.length-1]);
 
-			fetch("http://localhost/laravel/public/img/rimuovi/" +source[source.length-1]).then(onRimuovi).then(onConferma1);
+			fetch("http://localhost/Sogno%20Italiano/public/img/rimuovi/" +source[source.length-1]).then(onRimuovi).then(onConferma1);
 		}
 	}
 	
