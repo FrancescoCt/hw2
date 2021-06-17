@@ -1,0 +1,978 @@
+/*Codice nuovo*/
+
+div#hormenu img{
+width: 32px;
+height: 32px;
+}
+
+div#hormenu {
+margin: 0;
+padding: 0;
+}
+
+div#hormenu ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;/*Evita che vengano messi i pallini alla lista non ordinata*/
+}
+
+div#hormenu li
+{
+width:100px;
+margin: 0;
+padding: 0;
+color:green;
+}
+
+div#hormenu a
+{
+display: block;
+padding: 5px;
+color: green;
+text-decoration: none;
+}
+div#hormenu a:hover
+{
+background-color: green;
+color: white;
+text-decoration: none;
+}
+
+div#hormenu li ul
+{
+display: none	/*Inizialmente non è visibile la sottolista*/
+}
+
+div#hormenu li:hover ul
+{
+display: block;
+position: absolute;/*Mi permette di sovrapporre la lista all'altro elemento vicino*/
+width:150px;
+padding: 0;
+margin: 0 0 0 -1px;
+border:1px solid black;
+border-radius: 10px;
+background: white;
+}
+
+div#hormenu li li {width:150px; }
+div#hormenu li li a { padding:2px 2px 2px 10px; }
+/*Fine codice nuovo*/
+
+body{
+   background-color: rgb(244, 164, 96, 0.4);	/*Modificato rispetto al precedente mhw2*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 18px;/**/
+}
+
+header{
+		
+	position: relative;
+    height: 400px;
+	width: 98%;
+	
+	border:2px solid green;
+	margin: 5px;
+	
+	border-radius: 10px;
+	
+	color:white;
+	
+	background-image:  url("../immagini/header.jpg") /*url("../Immagini/")*/;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content:space-around;
+	
+	align-items: center;
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 30px;
+	color: black;
+	line-height: 25px;
+	
+}
+
+#titolo{
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+	padding: 20px;
+	
+	width: auto;
+	height: auto;
+	
+	font-family: Helvetica;
+	font-size: 28px;
+	font-weight: bolder;
+	font-style: italic;
+	color: black;
+	
+	background-color: rgb(245, 245, 220, 1);/*beige -> delicato*/ 
+	border-radius: 100px;
+	border: 2px solid black;
+	
+	align-content: center;
+}
+
+.overlay{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:center;
+	
+	position: relative;
+	width: 90%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	
+}
+
+nav{
+	background-color: orange;
+	
+	position: absolute;
+	top: 75%;
+	width: 80%; 
+	height: 13%;
+	
+	border: 2px solid green;
+	margin: 20px;
+	padding: 10px;
+	
+	border-radius: 10px;
+	
+	display: flex;
+	align-items: left;
+	
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 50%;
+	color: black;
+	line-height: 25px;
+}
+
+
+nav a{
+	margin: 2px;
+	padding: 13px;
+	
+	border: 1px solid green;
+	border-radius: 10px;
+	background-color: rgb(240, 220, 130, 0.7);
+	
+	font-style: italic;
+	font-weight: bolder;
+	color: green;
+	text-decoration: none; /*non voglio il sottolineato*/
+}
+
+ a:hover{
+	background-color: white;
+	
+}
+nav a:hover{
+	border: 2px solid black;
+	
+}
+/*Profilo*/
+#profile{
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+	
+	width: 200px;
+	height: 200px;
+	
+	margin: 20px;
+	font-style: italic;
+	font-weight: bolder;
+	color: green;
+	
+}
+#profile img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+a{
+    cursor:pointer;
+	
+}
+
+#barra{
+	display:flex;
+	flex-direction:column;
+	
+	border: 2px solid green;
+	background-color: white;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 15px;
+	
+	justify-content: space-between;
+	align-content: center;
+	
+	align-items: center;
+	
+	line-height: 30px;
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 14px;
+	
+}
+#barra h1{
+	color: darkgreen;
+}
+
+#barraDatabase{
+	display:flex;
+	flex-direction:column;
+	
+	border: 2px solid green;
+	background-color: white;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 15px;
+	
+	justify-content: space-between;
+	align-content: center;
+	
+	align-items: center;
+	
+	line-height: 30px;
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 14px;
+	
+}
+#barraDatabase h1{
+	color: darkgreen;
+}
+
+button{
+	cursor:pointer;
+	
+}
+button:hover{
+	background-color: rgb(245, 245, 220, 0.9);
+	
+}
+
+
+ .oggetto{
+	display:flex;
+	flex-direction:column;
+		
+	align-items: center;
+	text-align: center; /*Allineo gli inline elements*/
+	
+	
+	margin: 2px;
+	padding: 10px;
+	
+	/*width: 30%;*/
+	/*height: 80%;*/
+	max-width: 30%;/*modifica rispetto al mhw2 originale*/
+	max-height: 90%;
+	
+	font-size: 80%;
+
+}
+.oggetto h2{/*modifica rispetto al mhw2 originale*/
+	font-size: 16px;
+}
+.oggetto h3{/*modifica rispetto al mhw2 originale*/
+	font-size: 12px;
+}
+
+.oggetto button{
+	border-radius: 10px;
+	font-size: 80%;
+	width: 75%;
+	max-height: 40px;
+	
+	min-width: 100px;/*modifica rispetto al mhw2 originale*/
+	
+}
+
+.divisore img{
+	width: 80%;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.hidden{
+	display: none;/**/
+}
+
+ .oggetto div{
+	border-radius: 100px;
+	width: 50%;
+	height: 20px;
+	border: 1px solid green;
+	background-image: url("../Immagini/preferito.jpeg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 0px; 				/*Grazie a questo accorgimento posso mettere l'immagine di sfondo al centro del div*/
+	margin-bottom: 10px;
+}
+
+
+.filtrati{
+	width: 80%;
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	
+	border-radius: 20px;
+	
+	
+}
+.filtrati1{
+	width: 80%;
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	border-radius: 20px;
+	
+	
+}
+.cercato{
+	border: 1px solid black;
+	background-color: white;
+	
+	margin: 10px;
+	padding: 15px;
+	
+	flex-direction: column;
+	align-items: center;
+	
+	border-radius: 20px;
+	
+	min-width: 300px;
+	
+	
+}
+.cercato img {
+	max-width: 80%;
+	max-height: 350px;
+	
+	margin: 10px;
+	
+	background-color: white;
+	border: 1px solid black;
+	
+	border-radius: 50px;
+}
+
+section{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-content: center;
+	
+	align-items: center;	/*modificato rispetto al mhw2 originale*/
+	
+	border: 2px solid green;
+	border-radius: 10px;
+	
+	margin: 5px;
+	padding:5px;
+	
+	position: relative;
+	
+	width: 93%;
+	max-height: 480%;
+	min-width: 600px;
+	
+	background-color: rgb(245, 245, 220, 0.9);/*beige -> delicato*/
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 100%;
+	color: black;
+	line-height: 25px;
+	
+	
+	
+}
+section a:link {
+	color: black;
+}
+
+.button{
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+		
+	width: 120px;
+	
+	margin: 5px;
+	padding: 15px;
+	
+	border: 2px solid orange;
+	border-radius: 80px;
+	
+	font-size: 20px;
+	font-family: Helvetica;
+	font-weight: bolder;
+	font-style: italic;
+	color: black;
+	
+	background-color: rgb(240, 220, 130, 0.7);
+	text-decoration: none; /*non voglio il sottolineato*/
+}
+
+.divisore{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	
+	width: 98%;
+	height: 570px;/*modificato rispetto al mhw2 originale*/
+	
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+	border: 1px solid green;
+	border-radius: 10px;
+	
+	background-color: rgb(240, 220, 130, 0.7);/*camoscio -> medio*/
+	
+	line-height: 20px;
+}
+
+
+.riga{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-content: center;
+	
+	align-items: center;
+	
+	position: relative;
+	width: 98%;
+	height: 40%;/*modificato rispetto al mhw2 originale*/
+	
+	max-height: 700px;
+	
+	border: 1px solid blue;
+	border-radius: 10px;
+	
+	margin: 5px;
+	padding:5px;
+	
+	background-color: rgb(255, 204, 153, 0.7);/* pesca arancio*/
+}
+
+
+#annuncio{
+	align-items: center;
+	border: 2px solid black;
+	background-color: white;
+	
+	position: relative;
+	width: 25%;
+	height: 97%;
+	
+	border-radius: 10px;
+	
+	font-size: 1vw;
+	font-family: 'Raleway','sans-serif';
+	
+	line-height: 3vw;
+	margin: 5px;
+	padding:5px;
+	
+}
+
+#annuncio h2{
+	font-weight: bolder;
+	color: red;
+}
+#annuncio img{
+	position: relative;
+	width: 80%;
+	height: 30%;
+	border-radius: 10px;
+	border: 2px solid blue;
+}
+
+#main{
+	align-items: center;
+	display: flex;
+	flex-direction:column;
+	align-content:center;
+	
+	border: 2px solid black;
+	background-color: rgb(245, 245, 220, 1);/*beige -> delicato*/
+	
+	position: relative;
+	width: 50%;
+	
+	
+	border-radius: 10px;
+	
+	font-size: 1.1vw;
+	font-family: 'Roboto','sans-serif';
+	line-height: 25px;
+	
+	margin: 5px;
+	padding:10px;
+	
+}
+#main img{
+	width: 30%;
+	height: 10%;
+	border-radius: 30px;
+	
+}
+
+#main a:link{
+	color: red;
+}
+em {
+	color: green;
+	font-weight: bolder;
+}
+
+#recapiti{
+	align-items:center;
+	
+	border: 2px solid black;
+	background-color: white;
+	
+	position: relative;
+	width: 20%;
+	height: 90%;
+	border-radius: 10px;
+	
+	font-size: 54%;
+	font-family: 'Roboto','sans-serif';
+	
+	margin: 5px;
+	padding: 25px;
+	
+	line-height: 20px;
+	
+}
+#recapiti img{
+	width: 70%;
+	height: 15%;
+	border-radius: 100px;
+	
+}
+
+#recapiti a:link{
+	color: blue;
+}
+
+
+.lista{
+	display:flex;
+	flex-direction: column;
+	position: relative;
+	border: 2px solid black;
+	background-color: grey;
+	
+	position: relative;
+	width: 30%;
+	height: 65%;
+	
+	border-radius: 10px;
+	margin: 5px;
+	padding:2px;
+	
+	font-size: 100%;
+	background-color: rgb(255, 254, 239, 1);/*bianco di titanio*/
+	line-height: 40px;
+	font-family: 'Roboto','sans-serif';
+	align-items: center;
+}
+.lista img{
+	width: 40%;
+	height: 20%;
+	border-radius: 100px;
+}
+.lista h3{
+	color: green;
+}
+
+/*ZONA PREFERITI MHW2*/
+#preferiti{
+	font-weight:bolder;
+	
+	border-radius: 20px;
+	margin: 15px;
+	padding: 5px;
+	
+	display: flex;
+	flex-direction: row; /*Mettici row quando usi la flex-wrapper: wrap*/
+	flex-wrap: wrap;/**/
+	align-items: center;
+	
+	width: 98%;
+}
+
+#preferiti img{
+	max-width: 200px;		/*Scoperto dopo la consegna del mhw2*/
+	max-height: 300px;
+}
+
+.elemento{
+	margin: 10px;
+	padding: 10px;
+	width: 30%;
+	background-color: white;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	border-radius: 20px;
+}
+.elemento img{
+	width: 100%;
+	height: 70%;
+	border-radius: 50px;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	align-items: center;
+}
+
+/* FINE ZONA PREFERITI MHW2*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	border: 1px solid blue;
+	/*background-color: rgba(0, 0, 0, 0.6);*/
+	background-color: rgba(47, 79, 79, 1);
+	
+	position: relative;
+	
+	height: 250px;
+	width: 98%;
+	
+	border-radius: 10px;
+	
+	font-weight: bold;
+	font-style: italic;
+	color:white;
+	font-family: 'Roboto','sans-serif';
+	font-size: 70%;
+	line-height: 25px;
+		
+	margin: 5px;
+	
+}
+footer p{
+	font-size: 2vw;
+}
+
+
+footer img{
+	/*margin-top: 20px;*/
+	width: 300px;
+	height: 100px;
+	border-radius:10px;
+
+}
+
+#accountGithub{
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	cursor: pointer;
+	
+}
+footer a{
+	border-radius:100px;
+	margin-top: 20px;
+}
+
+
+/*Adattamento per la larghezza della finestra:*/
+@media(max-width: 500px){	
+	header{
+        height: 400px;
+		width: 490px;
+    }
+	#titolo{
+        font-size: 20px;
+        
+    }
+	nav a{
+        font-size: 16px;
+    }
+	section{
+        width: 490px;
+		/*height:3600px; modifica rispetto al mhw2 originale*/
+		min-width: 250px; /*modifica rispetto al mhw2 originale*/
+		max-height: 800%; /*modifica rispetto al mhw2 originale*/
+    }
+	
+	.riga{
+        margin: 0px;
+		padding: 8px;
+		flex-direction: column;
+		height: 100%;/*	modifica rispetto al mhw2 originale*/
+		max-height: 12200px;/*modifica rispetto al mhw2 originale*/
+		
+    }
+	#annuncio{
+        margin: 0px;
+		padding: 1px;
+		flex-direction: column;
+		width: 98%;
+		height: 500px;
+		
+		font-size: 3vw;
+		line-height: 4vw;
+	}
+	#annuncio img{
+        width: 80%;
+		height: 50%;
+		border-radius: 10px;
+		border: 2px solid blue;
+	}
+	#main{
+        margin: 0px;
+		padding: 1px;
+		flex-direction: column;
+		width: 98%;
+		height: 410px;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0px;
+		padding: 1px;
+		
+    }
+	
+	#recapiti{
+        margin: 0px;
+		padding: 1px;
+		flex-direction: column;
+		width: 98%;
+		height: 400px;
+		font-size: 5px;
+		line-height: 20px;
+		
+	}
+	#recapiti img{
+        width: 70%;
+		height: 25%;
+		border-radius: 100px;
+		
+	}
+	.overlay {
+		width: 100%; /*modifica rispetto al mhw2 originale*/
+		height: 100%;/*modifica rispetto al mhw2 originale*/
+	}
+	.divisore{
+        width: 490px;
+		height: 400px;
+		margin-top: 40px;	/*modifica rispetto al mhw2 originale*/
+		margin-bottom: 40px;	/*modifica rispetto al mhw2 originale*/
+    }
+	
+	.divisore img{
+        width: 24%;
+		height: 140px;
+		margin: 1px;
+		padding: 1px;
+    }
+	.lista {
+        width: 200px;
+		height: 375px;
+		margin: 0px;
+		padding: 4px;
+		font-size: 20px;
+		display:flex;
+		flex-direction: column;
+	}
+	
+	footer{
+        font-size: 14px;
+		line-height: 40px;
+		
+        height: 200px;
+		width: 460px;
+		padding: 2px;
+		
+    }
+	footer img{
+        height: 61px;
+        width: 168px;
+    }
+	
+}
+
+
+
+/*Adattamento per l'altezza:
+Sotto questa soglia di altezza infatti il testo non si legge benissimo, questa parte di codice se ne occupa*/
+@media(max-height: 344px){
+    header{
+        height: 400px;
+		width: 98%;
+    }
+	footer{
+		width: 98%;
+		font-size: 18px;
+	}
+	footer p{
+	line-height: 90px;
+	}
+	section{
+		width: 90%;
+		height: 2060px;
+	}
+	.divisore{
+		width: 100%;
+	}
+	.divisore img{
+		
+		width: 22%;
+		height: 90%;
+	}
+	.riga{
+		height: 900px;
+	}
+	#annuncio{
+		line-height: 25px;
+	}
+	
+	.lista{
+		font-size: 90%;
+		height: 65%;
+	}
+	
+}
+/*Adattamento mobile:
+Le misure sono prese sul modello Galaxy S5, tuttavia la responsività è garantita anche alla maggior parte dei modelli
+proposti da Chrome
+*/
+@media(max-width: 360px){
+	header{
+        height: 280px;
+		width: 320px;
+    }
+	#titolo{
+        font-size: 16px;
+        
+    }
+	nav{
+       margin: 5px;
+	   width: 280px;
+        
+    }
+	nav a{
+        font-size: 12px;
+		padding: 5px;
+        
+    }
+	section{
+        width: 240px;
+		height: 6300px;/**/
+    }
+	.divisore{
+        width: 240px;
+		height: 1490px;/**/
+		flex-direction: column;
+    }
+	.overlay {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	
+	.divisore img{
+        width: 90%;
+		height: 60%;
+		margin: 1px;
+		padding: 1px;
+    }
+	
+	.overlay div {
+		width: 70%;
+		
+	}
+	
+	.stella{
+		background-position: 0px 0px;
+		height: 10px;
+	}
+	
+	.riga{
+		width: 235px;
+		border: 0.5px solid black;
+    }
+	#annuncio{
+        font-size: 5vw;
+		line-height: 6vw;
+		
+	}
+	#annuncio img{
+        width: 80%;
+		height: 40%;
+		border-radius: 10px;
+		border: 2px solid blue;
+	}
+	#main{
+		font-size: 12px; 
+		height: 610px;
+		padding: 2px;
+		border: 1px solid black;
+    }
+	
+	#preferiti{
+		position: relative;
+		/*bottom: -1783;*/
+	}
+	
+	footer{
+		position: relative;
+        font-size: 14px;
+		line-height: 40px;
+		
+        height: 230px;
+		width: 250px;
+		padding: 2px;
+		
+		/*bottom: -1784;*/
+    }
+}
+

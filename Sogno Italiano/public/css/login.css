@@ -1,0 +1,289 @@
+body{
+   background-color: rgb(244, 164, 96, 0.4);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Roboto','sans-serif';
+	font-size: 18px;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	height: 50%;
+	width: 98%;
+	
+	border-radius: 30px;
+
+	margin: 5px;
+	padding-top: 100px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header h1{
+	padding: 10px;
+	
+	border: 2px solid green;
+	border-radius: 10px;
+	background-color: rgb(240, 220, 130, 0.7);
+	text-align: center;
+	width: 50%;
+	
+	
+}
+/*Profilo dello sviluppatore, l'avatar è ottenuto con l'apikey di abstract*/
+#profilo{
+	font-size: 10px;
+	border-radius: 100px;
+	
+	padding: 10px;
+	margin-top: -40px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Sezione barra di navigazione*/
+nav{
+	
+	border-radius: 20px;
+	
+	width: 80%;
+	height: 4%;
+	
+	margin-top: 0px;
+	
+	padding: 30px;
+	background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25)); /*-> tendenza all'arancio rosso*/
+}
+nav a{
+	padding: 10px;
+	
+	border: 2px solid green;
+	border-radius: 10px;
+	background-color: rgb(240, 220, 130, 1);
+	
+	font-style: italic;
+	font-weight: bolder;
+	color: green;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: white;
+}
+nav a:hover{
+	border: 2px solid black;
+}
+a{
+    cursor:pointer;
+}
+
+/*AREA CREDENZIALI*/
+#credenziali {
+	display: flex;
+	min-width: 40%;
+	flex-direction: column;
+}
+form{
+	
+	border-radius: 30px;
+	margin: 50px;
+	padding: 10px;
+	
+	background-color: rgb(245, 245, 220, 1);
+}
+label{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 14px 0 14px 0;
+}
+input{
+	margin-left: 0.5em;
+}
+
+.hidden {
+	display: none;/**/
+}
+
+/*FINE AREA CREDENZIALI*/
+
+/*Parte dei contenuti*/
+
+section{
+	border-radius: 30px;
+
+	height: 40%;
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Descrizione delle idee dei contenuti*/
+
+article{
+	text-align: left;
+	justify-content: center;
+	
+	border-radius: 20px;
+	border: 1px solid green;
+
+	width: 80%;
+	
+	margin: 20px;
+	padding: 20px;
+	
+	min-width: 400px;
+	min-height: 500px;
+	
+	max-width: 800px;
+	max-height: 170%;
+	
+	background: linear-gradient(to right, rgb(255, 226, 89), rgb(255, 167, 81));
+	
+}
+article span{
+	color: red;
+	font-weight: bolder;
+}
+
+blockquote {
+	text-align: center;
+	justify-content: center;
+	
+	border-radius: 20px;
+	
+	height: 30%;
+	width: 50%;
+	
+	margin-bottom: 20px;
+	margin-top: 0px;
+	padding: 20px;
+	
+	font-size: 100%;
+}
+#saluti{
+	text-align: center;
+	color: black;
+	
+	width: 70%;
+}
+
+/*Footer con contatti*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	border: 1px solid blue;
+
+	background-color: rgba(47, 79, 79, 1);
+	
+	position: relative;
+	
+	height: 250px;
+	width: 98%;
+	
+	border-radius: 10px;
+	
+	font-weight: bold;
+	font-style: italic;
+	color:white;
+	font-family: 'Roboto','sans-serif';
+	font-size: 70%;
+	line-height: 25px;
+		
+	margin: 5px;
+	
+}
+footer p{
+	font-size: 2vw;
+}
+
+
+footer img{
+	width: 300px;
+	height: 100px;
+	border-radius:10px;
+}
+
+#accountGithub{
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	cursor: pointer;
+}
+footer a{
+	border-radius:100px;
+	margin-top: 20px;
+}
+/*Adattamento mobile: Galaxy S5*/
+
+@media(max-width: 360px){
+	body{
+		width: 360px;
+	}
+	header{
+		width: 360px;
+		height: 300px;
+		padding: 0px;
+		font-size: 12px;
+	}
+	header h1{
+		width: 120px;
+		padding: 2px;
+	}
+	nav{
+		width: 220px;
+		height: 8%;
+	
+		padding: 15px;
+		padding-top: 35px;
+		text-align: center;
+	}
+	nav a{
+		padding: 5px;
+		font-size: 16px;
+	}
+	
+	#profilo{
+	font-size: 4px;
+	
+	padding: 2px;
+	margin-top: 10px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	article{
+	
+	height: 1300px;
+	width: 220px;
+	
+	margin: 20px;
+	padding: 20px;
+	
+	min-width: 280px;
+	min-height: 600px;
+	
+	max-height: 200%;
+	
+	}
+
+
+	
+}
