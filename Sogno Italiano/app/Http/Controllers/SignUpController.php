@@ -11,12 +11,7 @@ class SignUpController extends BaseController
 			$old_telefono = Request::old('tel_utente');
 			$old_nascita = Request::old('nascita_utente');
 		return view('signUp')
-				->with('csrf_token', csrf_token())
-				->with('old_nome', $old_nome)
-				->with('old_cognome', $old_cognome)
-				->with('old_cf', $old_cf)
-				->with('old_telefono', $old_telefono)
-				->with('old_nascita', $old_nascita);
+				->with('csrf_token', csrf_token());
 		
 	}
 	

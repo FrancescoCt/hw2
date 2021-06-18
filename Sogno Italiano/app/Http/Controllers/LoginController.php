@@ -13,14 +13,13 @@ class LoginController extends BaseController
 		
 			$old_cf = Request::old('cf_utente');
 			return view('login')
-				->with('csrf_token', csrf_token())
-				->with('old_cf', $old_cf);
+				->with('csrf_token', csrf_token());
 		}
 	}
 	
 	public function checkLogin(){
 		
-		$user = Cliente::where("cf", request('cf_utente'))->where("userPswd", md5(request('pswd_utente')))->first();	//Da sistemare perchè si richiama alla tabella "clientes" che non esiste e non "cliente"
+		$user = Cliente::where("cf", request('cf_utente'))->where("userPswd", md5(request('pswd_utente')))->first();
 		if(isset($user)){
 			
 			Session::put('utente', $user->cf);
@@ -30,7 +29,7 @@ class LoginController extends BaseController
 		}
 		else{
 	
-			return redirect('login')->withInput(); //senza questo non funziona {{$old_cf}} perchè non viene ritornato l'input alla pagina altrimenti
+			return redirect('login');
 		}
 	}
 	
