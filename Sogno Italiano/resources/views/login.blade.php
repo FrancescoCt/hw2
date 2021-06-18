@@ -26,7 +26,7 @@
 		
 		<form method='post'>
 			<input type = 'hidden' name='_token' value='{{ $csrf_token }}'>
-			<label>Codice Fiscale   <input id= 'codFisc' type='text' placeholder = 'Codice Fiscale' name='cf_utente' value = '{{ $old_cf }}' ></label>
+			<label>Codice Fiscale   <input id= 'codFisc' type='text' placeholder = 'Codice Fiscale' name='cf_utente'></label>
 			<label>Password   <input type='password' name='pswd_utente' ></label>
 			<label><input type='submit' name='invio' value='Login' ></label>
 			
@@ -35,7 +35,7 @@
 		
 		</div>
 		
-			<div class = 'hidden'>
+			<div id='errore' class = 'hidden'>
 				<p>Errore: utente non registrato o password non corretta</p>
 			</div>
 		

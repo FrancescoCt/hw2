@@ -22,11 +22,11 @@
 			<div id='credenziali'>
 			<form method='post'>
 				<input type = 'hidden' name='_token' value='{{ $csrf_token }}'>
-				<label>Nome<input type='text' placeholder = 'Nome' name='nome_utente' value = '{{ $old_nome }}'></label>
-				<label>Cognome<input type='text' placeholder = 'Cognome' name='cognome_utente' value = '{{ $old_cognome }}'></label>
-				<label>Codice fiscale <input id= "codFisc" type='text' placeholder = 'Codice Fiscale' name='cf_utente' value = '{{ $old_cf }}'></label>
-				<label>Telefono <input type='text' placeholder = '095 913215' name='tel_utente' value = '{{ $old_telefono }}' ></label>
-				<label>Data di nascita <input type='text' placeholder = '1980-01-01' name='nascita_utente' value = '{{ $old_nascita }}'></label>
+				<label>Nome<input type='text' placeholder = 'Nome' name='nome_utente' ></label>
+				<label>Cognome<input type='text' placeholder = 'Cognome' name='cognome_utente' ></label>
+				<label>Codice fiscale <input id= "codFisc" type='text' placeholder = 'Codice Fiscale' name='cf_utente' ></label>
+				<label>Telefono <input type='text' placeholder = '095 913215' name='tel_utente'  ></label>
+				<label>Data di nascita <input type='text' placeholder = '1980-01-01' name='nascita_utente' ></label>
 				<label>Password<input type='password' name='pswd_utente'></label>
 			
 				<label>Abbonamento<select name='abbonamento_utente'>
@@ -40,17 +40,9 @@
 			
 		</div>
 		
-		<div class = "hidden">
-			<p>Errore: uno dei requisiti non è stato soddisfatto</p>
+		<div id= 'errore' class = "hidden">
+			<p>Errore: codice fiscale già presente o regola non rispettata</p>
 		</div>
-		
-		
-		@if(isset($errore1))
-				<p class='errore'>
-				Credenziali non valide.
-				Il codice fiscale è già registrato nel database
-				</p>
-		@endif
 			
 		<h2>Regole per la registrazione</h2>
 		<p>
