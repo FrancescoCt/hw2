@@ -37,8 +37,10 @@ function onJsoncodFisc(json){
 	console.log(json);
 	if(json == 'Cf presente'){
 		flag = true;
+		const errore1 = document.querySelector('#errore');
+		errore1.classList.add('hidden');
 	}else {flag = false;
-	const errore = document.querySelector('.hidden');
+			const errore = document.querySelector('.hidden');
 			console.log(errore);
 			errore.classList.remove('hidden');}
 }

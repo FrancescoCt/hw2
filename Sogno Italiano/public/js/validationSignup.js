@@ -63,7 +63,10 @@ function onJson(json){
 		flag = false;
 		const errore = document.querySelector('.hidden');
 		errore.classList.remove('hidden');
-	}else {flag = true;}
+	}else {flag = true;
+	const errore1 = document.querySelector('#errore');
+		errore1.classList.add('hidden');
+	}
 }
 
 function checkCodFisc(){
